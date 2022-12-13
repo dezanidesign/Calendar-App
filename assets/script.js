@@ -1,21 +1,6 @@
 $("#currentDay").append(moment().format('dddd'));
 
 
-
-// var timeBlocksAppend =  [{
-//     block1: $('#block1').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block2: $('#block2').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block3: $('#block3').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block4: $('#block4').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block5: $('#block5').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block6: $('#block6').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block7: $('#block7').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block8: $('#block8').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block9: $('#block9').append(' <textarea id="blockText" name="blockText" rows="4" cols="50"> '),
-//     block9: $('#block9').append( moment().format('h:mm:ss a') ),
-
-// }]
-
      nineAM = moment(09, 'HH');
      tenAM = moment(10, 'HH');
      elevenAM = moment(11, 'HH');
@@ -91,31 +76,178 @@ for (i = 0; i < timeBlocks.length; i++){
 
 }
 
-// You just need to figure out a way to change the colour of blocks without using #block1 #block2 etc  
 
 
-// function testFunction () {
-//     if (timeBlocks[i] < moment()){
-//         $('#block1').css('background-color', ' rgb(149, 55, 55');
-//     }
-// }
-
-// testFunction();
+//first block
 
  var blockTextOne = document.getElementById("blockText1");
- var btnInsert = document.getElementById("btnInsert");
+ var btnInsertOne = document.getElementById("btnInsert1");
  var blockOneOutput = document.getElementById("block1Output");
  
- btnInsert.onclick = function(){
+ btnInsertOne.onclick = function(){
     var key = blockTextOne.value; //  This sets the item?
     console.log(key);
     localStorage.setItem("input1", key);
     var value = localStorage.getItem(key);
 
-blockOneOutput.innerHTML += key;
+
 
  }
 
 var write = localStorage.getItem("input1");
 blockTextOne.innerHTML += write;
+
+//second block
+
+var blockTextTwo = document.getElementById("blockText2");
+var btnInsertTwo = document.getElementById("btnInsert2");
+var blockTwoOutput = document.getElementById("block2Output");
+
+btnInsertTwo.onclick = function(){
+   var key = blockTextTwo.value; //  This sets the item?
+   console.log(key);
+   localStorage.setItem("input2", key);
+   var value = localStorage.getItem(key);
+
+
+
+}
+
+var write = localStorage.getItem("input2");
+blockTextTwo.innerHTML += write;
+
+
+//Third block
+
+var blockTextThree = document.getElementById("blockText3");
+var btnInsertThree = document.getElementById("btnInsert3");
+var blockThreeOutput = document.getElementById("block3Output");
+
+btnInsertThree.onclick = function(){
+   var key = blockTextThree.value; //  This sets the item?
+   console.log(key);
+   localStorage.setItem("input3", key);
+   var value = localStorage.getItem(key);
+
+
+
+}
+
+var write = localStorage.getItem("input3");
+blockTextThree.innerHTML += write;
+
+//Four block
+
+var blockTextFour = document.getElementById("blockText4");
+var btnInsertFour = document.getElementById("btnInsert4");
+var blockFourOutput = document.getElementById("block4Output");
+
+btnInsertFour.onclick = function(){
+   var key = blockTextFour.value; //  This sets the item?
+   console.log(key);
+   localStorage.setItem("input4", key);
+   var value = localStorage.getItem(key);
+
+
+
+}
+
+var write = localStorage.getItem("input4");
+blockTextFour.innerHTML += write;
+
+//Five block
+
+var blockTextFive = document.getElementById("blockText5");
+var btnInsertFive = document.getElementById("btnInsert5");
+var blockFiveOutput = document.getElementById("block5Output");
+
+btnInsertFive.onclick = function(){
+   var key = blockTextFive.value; //  This sets the item?
+   console.log(key);
+   localStorage.setItem("input5", key);
+   var value = localStorage.getItem(key);
+
+
+
+}
+
+var write = localStorage.getItem("input5");
+blockTextFive.innerHTML += write;
+
+//Six block
+
+var blockTextSix = document.getElementById("blockText6");
+var btnInsertSix = document.getElementById("btnInsert6");
+var blockSixOutput = document.getElementById("block6Output");
+
+btnInsertSix.onclick = function(){
+   var key = blockTextSix.value; //  This sets the item?
+   console.log(key);
+   localStorage.setItem("input6", key);
+   var value = localStorage.getItem(key);
+
+
+
+}
+
+var write = localStorage.getItem("input6");
+blockTextSix.innerHTML += write;
+
+//Seven block
+
+var blockTextSeven = document.getElementById("blockText7");
+var btnInsertSeven = document.getElementById("btnInsert7");
+var blockSevenOutput = document.getElementById("block7Output");
+
+btnInsertSeven.onclick = function(){
+   var key = blockTextSeven.value; //  This sets the item?
+   console.log(key);
+   localStorage.setItem("input7", key);
+   var value = localStorage.getItem(key);
+
+
+
+}
+
+var write = localStorage.getItem("input7");
+blockTextSeven.innerHTML += write;
+
+//Eight block
+
+var blockTextEight = document.getElementById("blockText8");
+var btnInsertEight = document.getElementById("btnInsert8");
+var blockEightOutput = document.getElementById("block8Output");
+
+btnInsertEight.onclick = function(){
+   var key = blockTextEight.value; //  This sets the item?
+   console.log(key);
+   localStorage.setItem("input8", key);
+   var value = localStorage.getItem(key);
+
+
+
+}
+
+var write = localStorage.getItem("input8");
+blockTextEight.innerHTML += write;
+
+//Nine block
+
+var blockTextNine = document.getElementById("blockText9");
+var btnInsertNine = document.getElementById("btnInsert9");
+var blockNineOutput = document.getElementById("block9Output");
+
+btnInsertNine.onclick = function(){
+   var key = blockTextNine.value; //  This sets the item?
+   console.log(key);
+   localStorage.setItem("input9", key);
+   var value = localStorage.getItem(key);
+
+
+
+}
+
+var write = localStorage.getItem("input9");
+blockTextNine.innerHTML += write;
+
 
